@@ -104,7 +104,9 @@ a{
   width: 100%;
   height: 100vh;
   overflow: hiiden;
+
 }
+
 .contents:nth-child(odd){
   background-color: #ffffff;
 }
@@ -121,29 +123,41 @@ a{
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
+
 }
 
 .containers{
   position: absolute;
+  padding:0;
   width: 80%;
   height: 60%;
   top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
+
 }
 
 
 /* About */
-#about {
-  border:solid red 3px;
+.about__container__des {
+  float: left;
+  position: relative;
+  width: 50%;
+  top: 3rem;
+  text-align: center;
+  height: 80%;
 }
 
-.about__title {
-  border:solid red 3px;
-}
+.about__container__img {
+  float: left;
+  position: relative;
+  width: 50%;
+  top: 3rem;
+  text-align: center;
+  height: 80%;
 
-.about__container {
-  border:solid red 3px;
+  background-image: url(../public/assets/test.jpg);
+  background-size: cover;
 }
 
 /* Archive */

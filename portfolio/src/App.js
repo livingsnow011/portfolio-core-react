@@ -63,7 +63,14 @@ function About(){
         <h1>About</h1>
       </div>
       <div className="about__container containers">
-        <div className="about__container__des"></div>
+        <div className="about__container__des">
+          <p><b>Name</b></p><br/>
+          <p><b>AGE</b></p><br/>
+          <p><b>Address</b></p><br/>
+          <p><b>Phone</b></p><br/>
+          <p><b>E-mail</b></p><br/>
+
+        </div>
         <div className="about__container__img"></div>
       </div>
     </article>
