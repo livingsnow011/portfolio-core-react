@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    <title>PHS's portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9e2fadaa3c.js" 
-    crossorigin="anonymous"></script>
-    <script src="main.js" defer></script>
+    <script src="app.js" defer></script>
+
+    <!--font-awesome-->
+    <script src="https://kit.fontawesome.com/9e2fadaa3c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar__logo">
-            <i class="fa fa-safari" aria-hidden="true"></i>
-            <a href="#">PHS's portfolio</a>
+    <!--헤더 -->
+    <header id="home">
+        <!--네비게이션 바-->
+        <nav id="nav">
+          <div class="nav__wrapper">
+            <div class="nav__title">
+                <a href="#">Park Han Sol</a>
+                <!--반응형 햄버거 버튼-->
+                <button class="nav-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            
+            <!--네비게이션 메뉴-->
+            <div class="nav__menu">
+                <ul class="links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <!--메인 베너 이미지-->
+        <figure class="banner">
+            <div class="container">
+                <!--나에 대한 간략한 소개-->
+                <h1></h1>
+                <p></p>
+            </div>
+        </figure>
+    </header>
+
+    <!--건드리지 마시오-->
+    <!-- about -->
+    <section id="about" class="section">
+        <div class="title">
+          <h2>About</h2>
         </div>
-
-        <ul class="navbar__menu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul> 
-
-        <ul class="navbar__icons">
-            <li><i class="fa fa-google" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-        </ul>
-
-        <a href="#" class="navbar__toogleBtn">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+      </section>
+      <!-- services -->
+      <section id="services" class="section">
+        <div class="title">
+          <h2>Archive</span></h2>
+        </div>
+      </section>
+      <!-- contact -->
+      <section id="tours" class="section">
+        <div class="title">
+          <h2>Skills</h2>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="section">
+        <p>
+          copyright &copy; backroads travel tours company
+          <span id="date"></span>. all rights reserved
+        </p>
+      </footer>
 </body>
 </html>
