@@ -282,6 +282,7 @@ nav {
 }
 /* hero */
 header {
+  width: 100%;
   min-height: 100vh;
   background: url(./hero.png) center/cover no-repeat;
   /*그라데이션, 했는데 더 안 예쁨 */
