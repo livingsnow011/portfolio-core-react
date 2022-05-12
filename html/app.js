@@ -66,11 +66,13 @@ window.addEventListener("scroll", function () {
 
 // ********** smooth scroll ************
 // select links
-const scrollLinks = document.querySelectorAll(".scroll-link");
+// 앵커 위치 조정
+const scrollLinks = document.querySelectorAll(".scroll-links");
 scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     // prevent default
     e.preventDefault();
+
     // navigate to specific spot
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
@@ -87,11 +89,12 @@ scrollLinks.forEach((link) => {
       position = position + containerHeight;
     }
 
+
     window.scrollTo({
       left: 0,
       top: position,
     });
-    // close
+    // 축소 close
     linksContainer.style.height = 0;
   });
 });

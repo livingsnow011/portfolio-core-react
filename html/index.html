@@ -29,11 +29,11 @@
             <!--네비게이션 메뉴-->
             <div class="nav__menu">
                 <ul class="links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Archive</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about" class="scroll-links">About</a></li>
+                    <li><a href="#archive" class="scroll-links">Archive</a></li>
+                    <li><a href="#skills" class="scroll-links">Skills</a></li>
+                    <li><a href="#projects" class="scroll-links">Projects</a></li>
+                    <li><a href="#" class="scroll-links">Contact</a></li>
                 </ul>
             </div>
           </div>
@@ -50,31 +50,54 @@
         </figure>
     </header>
 
-    <!--건드리지 마시오-->
-    <!-- about -->
-    <section id="about" class="section">
+    <main id="main" class="main">
+      <!--about-->
+      <section id="about" class="section">
         <div class="title">
           <h2>About</h2>
         </div>
-      </section>
-      <!-- services -->
-      <section id="services" class="section">
-        <div class="title">
-          <h2>Archive</span></h2>
+        <div class="about__wrapper">
+          <div class="about__img fk"></div>
+          <div class="about__tab fk"></div>
         </div>
       </section>
-      <!-- contact -->
-      <section id="tours" class="section">
+      <!--archive-->
+      <section id="archive" class="section">
+        <div class="title">
+          <h2>Archive</h2>
+        </div>
+        <div class="archive__wrapper">
+
+        </div>
+      </section>
+
+      <!--skills-->
+      <section id="skills" class="section">
         <div class="title">
           <h2>Skills</h2>
         </div>
+        <div class="skills__wrapper">
+
+        </div>
       </section>
-      <!-- footer -->
-      <footer class="section">
-        <p>
-          copyright &copy; backroads travel tours company
-          <span id="date"></span>. all rights reserved
-        </p>
-      </footer>
+
+      <!--Project-->
+      <section id="projects" class="section">
+        <div class="title">
+          <h2>Project</h2>
+        </div>
+        <div class="projects__wrapper">
+
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; backroads travel tours company
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
 </body>
 </html>
