@@ -5,11 +5,6 @@
 // slice extracts a section of a string without modifying original string
 //offsetTop - A Number, representing the top position of the element, in pixels
 
-// ********** set date ************
-// 지워도 됨 난 안씀
-const date = document.getElementById('date');
-date.innerHTML = new Date().getFullYear();
-
 //네비게이션바 반응형 햄버거 메뉴 구현 
 // ********** close links ************
 const navToggle = document.querySelector(".nav-toggle");
@@ -17,7 +12,6 @@ const linksContainer = document.querySelector(".nav__menu");
 const links = document.querySelector(".links");
 
 navToggle.addEventListener("click", function () {
-    // linksContainer.classList.toggle("show-links");
     // toggle 편하지만 아름답지 않다. 
     // css에서 height -> 0;
     const containerHeight = linksContainer.getBoundingClientRect().height;
@@ -27,7 +21,6 @@ navToggle.addEventListener("click", function () {
     } else {
       linksContainer.style.height = 0;
     }
-    // console.log(linksContainer.getBoundingClientRect());
   });
 
 

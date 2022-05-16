@@ -45,8 +45,8 @@ Variables
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: "Roboto", arial;
+  --ff-secondary: "Open Sans", arial;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -137,17 +137,20 @@ p {
     font-size: 0.875rem;
   }
 }
-/*  global classes */
-
-/*===========================================*/
-/* navbar */
+/*
+=============== 
+style.css
+===============
+*/
+/*==================================================================*/
+/*==========================* navbar *==============================*/
+/*==================================================================*/
 nav {
   background: transparent;
   padding: 1rem 1.5rem;
 }
 
-/*fixed js에서 처리*/
-/* fixed nav */
+/* fixed nav, class created by app.js in #nav */
 .fixed-nav {
   position: fixed;
   top: 0;
@@ -156,32 +159,35 @@ nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
-.fixed-nav .nav__title a{
+.fixed-nav .nav__wrapper .nav__title a{
   color: var(--clr-grey-1);
 }
-.fixed-nav .nav__title a:hover{
+.fixed-nav .nav__wrapper .nav__title a:hover{
   color: var(--clr-secondary);
 }
-.fixed-nav .links a {
+.fixed-nav .nav__wrapper .nav__menu .links a {
   color: var(--clr-grey-1);
 }
-.fixed-nav .links a:hover {
+.fixed-nav .nav__wrapper .nav__menu .links a:hover {
   color: var(--clr-secondary);
 }
-/* .fixed-nav .links-container {
-  height: auto !important;
-} */
 
-/*.nav-header -> .nav__title*/
-.nav__title {
+nav .nav__wrapper {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav__wrapper .nav__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-
-/*.logo - > .nav__title a*/
-.nav__title a {
+nav .nav__wrapper .nav__title a {
   height: 50px;
   line-height: 50px;
   background: transparent;
@@ -196,25 +202,17 @@ nav {
   white-space: nowrap;
 }
 
-.nav-toggle {
+nav .nav__wrapper .nav__title .nav-toggle {
   visibility: hidden;
 }
 
-/*.links-container -> .nav__menu*/
-.nav__menu {
+nav .nav__wrapper .nav__menu {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
-/*.show-links js에서 처리*/
-.show-links {
-  height: 200px;
-}
 
-.links {
-  display: flex;
-}
-.links a {
+nav .nav__wrapper .nav__menu .links a {
   background: transparent;
   color: var(--clr-white);
   font-size: 1.1rem;
@@ -229,7 +227,7 @@ nav {
 
 /*수정 필요*/
 /*흰색 링크 호버 뭘해도 구린거 같음 */
-.links a:hover {
+nav .nav__wrapper .nav__menu .links a:hover {
   color: var(--clr-white);
 }
 
@@ -238,10 +236,13 @@ nav {
   nav{
     background: var(--clr-white);
   }
-  nav .nav__title a {
+  nav .nav__wrapper{
+    display: block; 
+  }
+  nav .nav__wrapper .nav__title a {
     color: var(--clr-grey-1);
   }
-  .nav-toggle{
+  nav .nav__wrapper .nav__title .nav-toggle{
     visibility: visible;
     font-size: 1.5rem;
     color: var(--clr-grey-1);
@@ -250,12 +251,12 @@ nav {
     transition: var(--transition);
     cursor: pointer;
   }
-  .nav-toggle:hover {
+  nav .nav__wrapper .nav__title .nav-toggle:hover {
     /*햄버거 로고 호버시 색깔 동일 바꿀 거 없음 지워라 */
     color: var(--clr-secondary);
   }
-/*links 일단 그대로*/
-  .links a {
+
+  nav .nav__wrapper .nav__menu .links a {
     background: var(--clr-white);
     color: var(--clr-grey-5);
     font-size: 1.1rem;
@@ -266,27 +267,24 @@ nav {
     display: block;
     transition: var(--transition);
   }
-  .links a:hover {
+  nav .nav__wrapper .nav__menu .links a:hover {
     color: var(--clr-grey-1);
   }
 }
-
 /*확장*/
 @media screen and (min-width: 768px) {
-  /*.nav-center -> .nav__wrapper*/
-  .nav__wrapper {
-    width: 90vw;
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav__menu {
+  nav .nav__wrapper .nav__menu {
     height: auto !important;
   }
+
+  nav .nav__wrapper .nav__menu .links {
+    display: flex;
+  }
 }
-/*=====================================================================================================================================*/
+
+/*==================================================================*/
+/*==========================* figure *==============================*/
+/*==================================================================*/
 /* hero */
 header {
   width: 100%;
@@ -295,91 +293,107 @@ header {
   /*그라데이션, 했는데 더 안 예쁨 */
   /*background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7))*/
 }
-.banner {
+
+.hero {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.container h1 {
+
+.hero__wrapper h1 {
+  margin-top: 1rem;
   color: var(--clr-white);
   text-transform: uppercase;
 }
-.container p {
+
+/*h1과 p의 간격 조절 임시, 수정 필요*/
+.hero__wrapper p:nth-child(2){
+  margin-top: 1.5rem;
+}
+
+.hero__wrapper p {
   color: var(--clr-white);
-  max-width: 25rem;
+  max-width: 40rem;
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
+
+/*축소 시 p 크기 조절 임시, 수정 필요*/
+@media screen and (max-width: 768px) {
+  .hero__wrapper p {
+    max-width: 25rem;
   }
 }
-/* sections and title */
-.title h2 {
-  text-align: center;
-  text-transform: uppercase;
-}
-.title span {
-  color: var(--clr-secondary);
-}
-
 
 /*==================================================================*/
-/* #about,
-#services,
-#tours {
-  height: 80vh;
-}
-#services {
-  background: var(--clr-white);
-} */
-
+/*============================* main *==============================*/
+/*==================================================================*/
+/*main{}*/
+/* sections and title */
 .section {
+  /* 하나의 섹션은 최소 크기는 화면크기이다. */
+  min-height: 100vh;
   padding: 5rem 0;
 }
 
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
+.section:nth-of-type(2n){
+  color:var(--clr-white);
+  background-color: #9cc7e7;
 }
 
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+.section:nth-of-type(2n) p{
+  color:var(--clr-white);
 }
 
-
+/*삐져 나온거 있는지 검사 projects 까지 완료시 지워라*/
 #about,#archive,#skills,#projects{
   overflow: auto;
 }
-.title{
-  height: 20%;
-}
-.title h2{
-  display: block;
-  margin-top:50px;
-}
-/*==================================================================*/
-/*about*/
 
-.title {
+/* section-title h2 : 큰 제목 */
+/* section-title span : 부연 설명 */
+.section-title{
+  height: 20%;
   text-align: center;
   margin-bottom: 4rem;
 }
-.title p {
-  width: 80%;
-  margin: 0 auto;
+
+.section-title h2{
+  text-transform: uppercase;
+  /*축소 일 때 위가 조금 비워 보임, 미디어 쿼리로 조정 필요*/
+  margin-top:50px;
 }
 
+.section-title p{
+  margin: 0 auto;
+  width: 80%;
+}
+
+/*section의 내용물들*/
+.section__wrapper {
+  width: 95vw;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  /*about,archive를 위한 flex, skills,projects는 모르겠음*/
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+
+  border: solid red 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__wrapper {
+    width: 90vw;
+  }
+}
+
+/*==================================================================*/
+/*============================* about *=============================*/
+/*==================================================================*/
 .about-img {
   margin-bottom: 2rem;
 }
@@ -449,23 +463,13 @@ main {
   display: block;
 }
 
-
-
-@media screen and (max-width: 768px){
-  #about .about__wrapper{
-    flex-flow: wrap column;
-  }
-}
-
-
+/*==================================================================*/
+/*============================* archive *===========================*/
 /*==================================================================*/
 
-#archive{
-  width: 100%;
-  background-color: var(--clr-main);
-  color: var(--clr-white);
-}
-/*footer*/
+/*==================================================================*/
+/*============================* footer *============================*/
+/*==================================================================*/
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
@@ -477,7 +481,7 @@ footer p {
   letter-spacing: var(--spacing);
   margin-bottom: 0;
 }
-
+/* 
 .top-link {
   font-size: 1.25rem;
   position: fixed;
@@ -494,7 +498,9 @@ footer p {
   visibility: hidden;
   z-index: -100;
 }
+
 .show-link {
+  height: 200px;
   visibility: visible;
   z-index: 100;
 }
@@ -510,7 +516,7 @@ footer p {
     transform: scale(1);
   }
 }
-
+ */
 
 
 
