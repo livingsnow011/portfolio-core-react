@@ -374,28 +374,46 @@ header {
 /*section의 내용물들*/
 .section__wrapper {
   width: 95vw;
+  height: 50vh;
   max-width: 1170px;
   margin: 0 auto;
-
+  border: solid red 2px;
   /*about,archive를 위한 flex, skills,projects는 모르겠음*/
   display: flex;
   flex-flow: wrap row;
-  justify-content: center;
+  justify-content: space-between;
 
-  border: solid red 2px;
 }
 
 @media screen and (max-width: 768px) {
   .section__wrapper {
     width: 90vw;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 /*==================================================================*/
 /*============================* about *=============================*/
 /*==================================================================*/
-.about-img {
+
+.about__wrapper{
+}
+
+.about__wrapper-img{
+  border:solid blue 3px;
+  background: url(./me.png) center/cover no-repeat;;
+  border-radius: var(--radius);
+}
+
+
+
+/* .about__wrapper-des{
+  border:solid green 2px;
+} */
+/* .about-img {
   margin-bottom: 2rem;
+  border: solid red 2px;
 }
 .about-img img {
   border-radius: var(--radius);
@@ -461,7 +479,7 @@ header {
 }
 .content.active {
   display: block;
-}
+} */
 
 /*==================================================================*/
 /*============================* archive *===========================*/
