@@ -19,7 +19,7 @@
         <nav id="nav">
           <div class="nav__wrapper">
             <div class="nav__title">
-                <a href="#">Park Han Sol</a>
+                <a href="#home">Park Han Sol</a>
                 <!--반응형 햄버거 버튼-->
                 <button class="nav-toggle">
                     <i class="fa fa-bars"></i>
@@ -33,14 +33,15 @@
                     <li><a href="#archive" class="scroll-links">Archive</a></li>
                     <li><a href="#skills" class="scroll-links">Skills</a></li>
                     <li><a href="#projects" class="scroll-links">Projects</a></li>
-                    <li><a href="#" class="scroll-links">Contact</a></li>
+                    <li><a href="#contact" class="scroll-links">Contact</a></li>
                 </ul>
             </div>
           </div>
         </nav>
+
         <!--메인 베너 이미지-->
-        <figure class="banner">
-            <div class="container">
+        <figure class="hero">
+            <div class="hero__wrapper">
                 <!--나에 대한 간략한 소개-->
                 <h1>Devleoper</h1>
                 <p>안녕하세요.</p>
@@ -53,25 +54,26 @@
     <main id="main" class="main">
       <!--about-->
       <section class="section" id="about">
-        <div class="title">
+        <div class="section-title">
           <h2>about</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-            aperiam!
+            제 자신에 대한 소개와 약력, 목표 등을 적었습니다.
           </p>
         </div>
   
-        <div class="about-center section-center">
-          <article class="about-img">
-            <img src="./me.png" alt="내 사진" />
+        <div class="section__wrapper about__wrapper">
+          <article class="about__content about__wrapper-img">
           </article>
-          <article class="about">
+
+          <!--className about 수정 필요-->
+          <article class="about__content about">
             <!-- btn container -->
             <div class="btn-container">
               <button class="tab-btn active" data-id="history">introduction</button>
               <button class="tab-btn" data-id="vision">profile</button>
               <button class="tab-btn" data-id="goals">visions</button>
             </div>
+
             <div class="about-content">
               <!-- single item -->
               <div class="content active" id="history">
@@ -101,11 +103,6 @@
                   rights skateboard affogato readymade sustainable deep v
                   live-edge schlitz narwhal.
                 </p>
-                <ul>
-                  <li>list item</li>
-                  <li>list item</li>
-                  <li>list item</li>
-                </ul>
               </div>
               <!-- end of single item -->
               <!-- single item -->
@@ -128,42 +125,124 @@
           </article>
         </div>
       </section>
+
       <!--archive-->
       <section id="archive" class="section">
-        <div class="title">
-          <h2>Archive</h2>
+        <div class="section-title">
+          <h2>archive</h2>
+          <p>
+            학습한 내용, 수행한 프로젝트 등을 정리한 저장소들을 소개합니다. 
+          </p>
         </div>
-        <div class="archive__wrapper">
-
+        <div class="section__wrapper archive__wrapper">
+          <article class="archive__content github">
+            <div class="archive__content-logo"></div>
+            <hr width="100%" color="black" size="2"/>
+            <a href="https://github.com/livingsnow011" target="_blank"><h4>&nbsp https://github.com/livingsnow011</h4></a>
+            <h4>&nbsp 소스코드 저장소</h4>
+            <p>&nbsp 수행한 프로젝트를 저장했습니다.</p>
+          </article>
+          
+          <article class="archive__content tistory">
+            <div class="archive__content-logo"></div>
+            <hr width="100%" color="black" size="2"/>
+            <a href="https://livingsnow011.tistory.com/" target="_blank"><h4>&nbsp https://livingsnow011.tistory.com/</h4></a>
+            <h4>&nbsp 개인 블로그</h4>
+            <p>&nbsp 트러블 슈팅, 정리, 일상생활 등을 기록.</p>
+          </article>
         </div>
       </section>
 
       <!--skills-->
       <section id="skills" class="section">
-        <div class="title">
-          <h2>Skills</h2>
+        <div class="section-title">
+          <h2>skills</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            aperiam!
+          </p>
         </div>
-        <div class="skills__wrapper">
-
+        <div class="section__wrapper skills__wrapper">
+          <article class="skills">
+            <div class="skills-name">
+              <h3>Front-end</h3>
+            </div>
+            <div class="skills__container">
+              <div class="skill"><img src="./img/logo/html5.png" alt="html5"></div>
+              <div class="skill"><img src="./img/logo/css3.png" alt="css3"></div>
+              <div class="skill"><img src="./img/logo/js.png" alt="js"></div>
+              <div class="skill"><img src="./img/logo/ts.png" alt="ts"></div>
+              <div class="skill"><img src="./img/logo/react.png" alt="react"></div>
+            </div>
+          </article>
+          <article class="skills">
+            <div class="skills-name">
+              <h3>Back-end</h3>
+            </div>
+            <div class="skills__container">
+              <div class="skill"><img src="./img/logo/java.png" alt="java"></div>
+              <div class="skill"><img src="./img/logo/spring.png" alt="spring"></div>
+              <div class="skill"><img src="./img/logo/node.png" alt="node"></div>
+              <div class="skill"><img src="./img/logo/express.png" alt="express"></div>
+              <div class="skill"><img src="./img/logo/mysql.png" alt="mysql"></div>
+            </div>
+          </article>
+          <article class="skills">
+            <div class="skills-name">
+              <h3>Deployment</h3>
+            </div>
+            <div class="skills__container">
+              <div class="skill"><img src="./img/logo/docker.png" alt="docker"></div>
+              <div class="skill"><img src="./img/logo/aws.png" alt="aws"></div>
+              <div class="skill"><img src="./img/logo/vercel.png" alt="vercel"></div>
+            </div>
+          </article>
         </div>
       </section>
 
       <!--Project-->
       <section id="projects" class="section">
-        <div class="title">
-          <h2>Project</h2>
+        <div class="section-title">
+          <h2>projects</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            aperiam!
+          </p>
         </div>
-        <div class="projects__wrapper">
+        <div class="section__wrapper projects__wrapper">
+          <article class="project">
+            <h2>Project Title</h2>
+            <h4>Project 기간</h4>
+            <div class="project__content">
+              <div class="project__content__img">
+                <img src="./introduction.png" alt="ex">
+              </div>
+              <div class="project__content__des"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--contact-->
+      <section id="contact" class="section">
+        <div class="section-title">
+          <h2>contact</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            aperiam!
+          </p>
+        </div>
+        <div class="section__wrapper">
 
         </div>
       </section>
+
     </main>
 
     <!-- footer -->
-    <footer class="section">
+    <footer >
       <p>
-        copyright &copy; backroads travel tours company
-        <span id="date"></span>. all rights reserved
+        copyright &copy; 풋터, 너무 많은 고민을 하지 말자
       </p>
     </footer>
 </body>
