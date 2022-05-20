@@ -594,16 +594,75 @@ header {
   height: 100%;
   background-color: var(--clr-white);
   border: solid blue 1px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: nowrap row;
 }
 .project__content__img img{
+  position: absolute;
+  top:0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
   z-index:1;
 }
+
+/*이미지 양 옆 화살표 블럭*/
+.project__content__img div:nth-of-type(odd){
+  width: 20%;
+  height: 100%;
+  z-index:3;
+  cursor: pointer;
+}
+/*이미지 가운데 줌 블럭, 모달 창 생성*/
+.project__content__img div:nth-of-type(2n){
+  width: 60%;
+  height: 100%;
+  cursor: zoom-in;
+  z-index: 2;
+}
+
 .project__content__des{
   width: 55%;
   height: 100%;
+}
+/*==================================================================*/
+/*============================* contact *============================*/
+/*==================================================================*/
+.contact__wrapper{
+  text-align: center;
+  width: 50%;
+}
+
+.contact__wrapper *{
+  margin-bottom:1rem;
+}
+
+.contact__wrapper input:nth-of-type(1){
+  width: 30%;
+  height: 50px;
+}
+.contact__wrapper input:nth-of-type(2){
+  width: 40%;
+  height : 50px;
+}
+.contact__wrapper input:nth-of-type(3){
+  width: 70%;
+  height: 50px;
+  border: solid 1px var(--clr-black);
+  border-radius: var(--radius);
+}
+.contact__wrapper textarea{
+  width: 70%;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px var(--clr-black);
+  border-radius: var(--radius);
+  font-size: 16px;
+  resize: both;
 }
 /*==================================================================*/
 /*============================* footer *============================*/
