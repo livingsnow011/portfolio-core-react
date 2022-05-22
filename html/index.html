@@ -69,15 +69,15 @@
           <article class="about__content about">
             <!-- btn container -->
             <div class="btn-container">
-              <button class="tab-btn active" data-id="history">introduction</button>
-              <button class="tab-btn" data-id="vision">profile</button>
-              <button class="tab-btn" data-id="goals">visions</button>
+              <button class="tab-btn active" data-id="introduction">introduction</button>
+              <button class="tab-btn" data-id="profile">profile</button>
+              <button class="tab-btn" data-id="visions">visions</button>
             </div>
 
             <div class="about-content">
               <!-- single item -->
-              <div class="content active" id="history">
-                <h4>history</h4>
+              <div class="content active" id="introduction">
+                <h4>introduction</h4>
                 <p>
                   I'm baby wolf pickled schlitz try-hard normcore marfa man bun
                   mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
@@ -90,8 +90,8 @@
               </div>
               <!-- end of single item -->
               <!-- single item -->
-              <div class="content" id="vision">
-                <h4>vision</h4>
+              <div class="content" id="profile">
+                <h4>Profile</h4>
                 <p>
                   Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
                   crucifix offal deep v hella biodiesel. Church-key listicle
@@ -106,8 +106,8 @@
               </div>
               <!-- end of single item -->
               <!-- single item -->
-              <div class="content" id="goals">
-                <h4>goals</h4>
+              <div class="content" id="visions">
+                <h4>visions</h4>
                 <p>
                   Chambray authentic truffaut, kickstarter brunch taxidermy vape
                   heirloom four dollar toast raclette shoreditch church-key.
@@ -158,8 +158,7 @@
         <div class="section-title">
           <h2>skills</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-            aperiam!
+            제가 학습했고, 프로젝트에서 활용한 기술 스택들을 소개합니다.
           </p>
         </div>
         <div class="section__wrapper skills__wrapper">
@@ -205,8 +204,7 @@
         <div class="section-title">
           <h2>projects</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-            aperiam!
+            개인별, 팀별로 수행했었던 프로젝트들을 소개합니다.
           </p>
         </div>
         <div class="section__wrapper projects__wrapper">
@@ -216,11 +214,13 @@
             <div class="project__content">
               <div class="project__content__img">
                 <img src="./introduction.png" alt="ex">
-                <div class="left-block"></div>
+                <div class="left-block"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
                 <div class="center-block"></div>
-                <div class="right-block"></div>
+                <div class="right-block"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
               </div>
-              <div class="project__content__des"></div>
+              <div class="project__content__des">
+                
+              </div>
             </div>
           </article>
         </div>
@@ -237,12 +237,12 @@
         </div>
 
         <div class="section__wrapper contact__wrapper">
-          <form id="contact-form">
+          <form id="contact-form" class="contact__form">
             <input type="text" className="input" id="userName" placeholder=" 성함 (필수)" />             
             <input type="text" className="input" id="phone" placeholder=" 연락처 (생략 가능)" /><br/>
             <input type="text" className="input" id="userEmail" placeholder=" 보내주시는 분의 메일 주소를 입력해주세요 (필수)" /><br/>
             <textarea id="message" className="input" rows="5" placeholder=" 내용을 입력해주세요 (필수)"></textarea><br/>
-            <input type="button" id="btn" class="btn white" value="메일보내기" onClick="sendEmail()"/>
+            <input type="button" id="btn" class="contact__form-sendBtn" value="Send" onClick="sendEmail()"/>
           </form>
         </div>
       </section>
@@ -252,7 +252,7 @@
     <!-- footer -->
     <footer >
       <p>
-        copyright &copy; 풋터, 너무 많은 고민을 하지 말자
+        <!-- copyright &copy; 풋터, 너무 많은 고민을 하지 말자 -->
       </p>
     </footer>
 
@@ -267,9 +267,9 @@
             email : document.getElementById('userEmail').value,
             message : document.getElementById('message').value,
           }
-          if(!templateParams.name) return alert("성함을 입력해주세요");
-          if(!templateParams.email) return alert("메일을 입력해주세요");
-          if(!templateParams.message) return alert("메일 본문을 입력해주세요");
+        if(!templateParams.name) return alert("성함을 입력해주세요");
+        if(!templateParams.email) return alert("메일을 입력해주세요");
+        if(!templateParams.message) return alert("메일 본문을 입력해주세요");
         console.log(name);
 
         emailjs.send('service_3suz5b8', 'template_lctllas', templateParams).then(function(response){

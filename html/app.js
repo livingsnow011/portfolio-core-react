@@ -112,7 +112,7 @@ about.addEventListener("click", function (e) {
     });
     const element = document.getElementById(id);
     element.classList.add("active");
-    img.style.background = "url(./"+id+".jpg) center/cover no-repeat";
+    img.style.background = "url(./img/about/"+id+".jpg) center/cover no-repeat";
     console.log(element);
   }
 });
