@@ -330,7 +330,7 @@ header {
 .section {
   /* 하나의 섹션은 최소 크기는 화면크기이다. */
   min-height: 100vh;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .section:nth-of-type(2n){
@@ -354,7 +354,6 @@ header {
 .section-title h2{
   text-transform: uppercase;
   /*축소 일 때 위가 조금 비워 보임, 미디어 쿼리로 조정 필요*/
-  margin-top:50px;
 }
 
 .section-title p{
@@ -364,7 +363,7 @@ header {
 
 /*section의 내용물들*/
 .section__wrapper {
-  height: 50vh;
+  min-height: 50vh;
   width: 95vw;
   max-width: 1170px;
   margin: 0 auto;
@@ -586,7 +585,7 @@ header {
   position: relative;
   width: 45%;
   height: 100%;
-  background-color: var(--clr-white);
+  background-color: var(--clr-black);
   border: solid blue 1px;
 
   display: flex;
