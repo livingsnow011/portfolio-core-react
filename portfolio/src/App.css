@@ -463,6 +463,10 @@ header {
   .about__wrapper{
     height: 800px;
   }
+
+  .about__wrapper-img{
+    width:500px;
+  }
 }
 
 /*==================================================================*/
@@ -530,24 +534,22 @@ header {
   height: 500px;
 }
 
-
 .skills{
   height:33%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content:flex-start;
+  flex-flow: row wrap;
+  justify-content:center;
 }
 .skills .skills-name{
-  width:30%;
-  height: 100%;
+  width:400px;
+  height: 30px;
   text-align: center;
 }
 
 .skills .skills__container{
   width: 600px;
-  height: 50%;
   display: flex;
-  flex-flow: wrap row;
+  flex-flow: nowrap row;
   justify-content: flex-start;
 }
 

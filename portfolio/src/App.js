@@ -11,6 +11,7 @@ function App() {
         <About></About>
         <Archive></Archive>
         <Skills></Skills>
+      
       </main>
       <Footer></Footer>
     </div>
@@ -24,8 +25,7 @@ function Header(){
   const navbar = useRef(null);
   useEffect(()=>{
     navToggle.current.addEventListener("click", function () {
-      // toggle 편하지만 아름답지 않다. 
-      // css에서 height -> 0;
+
       const containerHeight = linksContainer.current.getBoundingClientRect().height;
       const linksHeight = links.current.getBoundingClientRect().height;
       if (containerHeight === 0) {
