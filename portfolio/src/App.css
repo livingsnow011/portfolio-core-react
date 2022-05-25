@@ -568,6 +568,8 @@ header {
   object-fit: contain;
 }
 
+
+
 /*==================================================================*/
 /*============================* projects *===========================*/
 /*==================================================================*/
@@ -636,8 +638,15 @@ header {
 .contact__form-sendBtn{
   width: 71%;
   height: 50px;
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-10);
+  background-color: var(--clr-grey-1);
   box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.contact__form-sendBtn:hover{
+  background-color: var(--clr-grey-5);
 }
 
 @media screen and (max-width:960px) {
@@ -649,8 +658,8 @@ header {
 /*==================================================================*/
 /*============================* footer *============================*/
 /*==================================================================*/
-footer {
-  background: var(--clr-grey-1);
+.footer {
+  background: var(--clr-black);
   padding: 5rem 1rem;
 }
 footer p {
