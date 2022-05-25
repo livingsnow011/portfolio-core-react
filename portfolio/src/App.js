@@ -21,6 +21,7 @@ function Header(){
   const navToggle = useRef(null);
   const linksContainer =  useRef(null);
   const links = useRef(null);
+  const navbar = useRef(null);
   useEffect(()=>{
     navToggle.current.addEventListener("click", function () {
       // toggle 편하지만 아름답지 않다. 
@@ -33,11 +34,22 @@ function Header(){
         linksContainer.current.style.height = 0;
       }
     });
+
+    window.addEventListener("scroll",()=>{
+      const scrollHeight = window.pageYOffset;
+      const navHeight = navbar.current.getBoundingClientRect().height;
+
+      if (scrollHeight > navHeight) {
+        navbar.current.classList.add("fixed-nav");
+    } else {
+        navbar.current.classList.remove("fixed-nav");
+    }
+    })
   })
 
   return(
     <header id="home">
-        <nav id="nav">
+        <nav id="nav" ref={navbar}>
           <div className="nav__wrapper">
             <div className="nav__title">
                 <a href="#home">Park Han Sol</a>
@@ -75,27 +87,27 @@ function About(){
 
 
   return(
-    <section class="section" id="about">
-      <div class="section-title">
+    <section className="section" id="about">
+      <div className="section-title">
         <h2>about</h2>
         <p>
           제 자신에 대한 소개와 약력, 목표 등을 적었습니다.
         </p>
       </div>
 
-      <div class="section__wrapper about__wrapper">
-        <article class="about__content about__wrapper-img">
+      <div className="section__wrapper about__wrapper">
+        <article className="about__content about__wrapper-img">
         </article>
 
-        <article class="about__content about">
-          <div class="btn-container">
-            <button class="tab-btn active" data-id="introduction">introduction</button>
-            <button class="tab-btn" data-id="profile">profile</button>
-            <button class="tab-btn" data-id="visions">visions</button>
+        <article className="about__content about">
+          <div className="btn-container">
+            <button className="tab-btn active" data-id="introduction">introduction</button>
+            <button className="tab-btn" data-id="profile">profile</button>
+            <button className="tab-btn" data-id="visions">visions</button>
           </div>
 
-          <div class="about-content">
-            <div class="content active" id="introduction">
+          <div className="about-content">
+            <div className="content active" id="introduction">
               <h4>introduction</h4>
               <p>
                 I'm baby wolf pickled schlitz try-hard normcore marfa man bun
@@ -107,7 +119,7 @@ function About(){
                 tacos single-origin coffee art party migas plaid pop-up.
               </p>
             </div>
-            <div class="content" id="profile">
+            <div className="content" id="profile">
               <h4>Profile</h4>
               <p>
                 Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
@@ -121,7 +133,7 @@ function About(){
                 live-edge schlitz narwhal.
               </p>
             </div>
-            <div class="content" id="visions">
+            <div className="content" id="visions">
               <h4>visions</h4>
               <p>
                 Chambray authentic truffaut, kickstarter brunch taxidermy vape
@@ -144,28 +156,28 @@ function About(){
 
 function Archive(){
   return(
-    <section id="archive" class="section">
-      <div class="section-title">
+    <section id="archive" className="section">
+      <div className="section-title">
         <h2>archive</h2>
         <p>
           학습한 내용, 수행한 프로젝트 등을 정리한 저장소들을 소개합니다. 
         </p>
       </div>
-      <div class="section__wrapper archive__wrapper">
-        <article class="archive__content github">
-          <div class="archive__content-logo"></div>
+      <div className="section__wrapper archive__wrapper">
+        <article className="archive__content github">
+          <div className="archive__content-logo"></div>
           <hr width="100%" color="black" size="2"/>
-          <a href="https://github.com/livingsnow011" target="_blank"><h4>&nbsp https://github.com/livingsnow011</h4></a>
-          <h4>&nbsp 소스코드 저장소</h4>
-          <p>&nbsp 수행한 프로젝트를 저장했습니다.</p>
+          <a href="https://github.com/livingsnow011" target="_blank"><h4> https://github.com/livingsnow011</h4></a>
+          <h4> 소스코드 저장소</h4>
+          <p> 수행한 프로젝트를 저장했습니다.</p>
         </article>
         
-        <article class="archive__content tistory">
-          <div class="archive__content-logo"></div>
+        <article className="archive__content tistory">
+          <div className="archive__content-logo"></div>
           <hr width="100%" color="black" size="2"/>
-          <a href="https://livingsnow011.tistory.com/" target="_blank"><h4>&nbsp https://livingsnow011.tistory.com/</h4></a>
-          <h4>&nbsp 개인 블로그</h4>
-          <p>&nbsp 트러블 슈팅, 정리, 일상생활 등을 기록.</p>
+          <a href="https://livingsnow011.tistory.com/" target="_blank"><h4> https://livingsnow011.tistory.com/</h4></a>
+          <h4> 개인 블로그</h4>
+          <p> 트러블 슈팅, 정리, 일상생활 등을 기록.</p>
         </article>
       </div>
     </section>
@@ -174,46 +186,46 @@ function Archive(){
 
 function Skills(){
   return(
-    <section id="skills" class="section">
-      <div class="section-title">
+    <section id="skills" className="section">
+      <div className="section-title">
         <h2>skills</h2>
         <p>
           제가 학습했고, 프로젝트에서 활용한 기술 스택들을 소개합니다.
         </p>
       </div>
-      <div class="section__wrapper skills__wrapper">
-        <article class="skills">
-          <div class="skills-name">
+      <div className="section__wrapper skills__wrapper">
+        <article className="skills">
+          <div className="skills-name">
             <h3>Front-end</h3>
           </div>
-          <div class="skills__container">
-            <div class="skill"><img src="../public/assets/img/skills-logo/html5.png" alt="html5" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/css3.png" alt="css3" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/js.png" alt="js" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/ts.png" alt="ts" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/react.png" alt="react" /></div>
+          <div className="skills__container">
+            <div className="skill"><img src="assets/img/skills-logo/html5.png" alt="html5" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/css3.png" alt="css3" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/js.png" alt="js" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/ts.png" alt="ts" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/react.png" alt="react" /></div>
           </div>
         </article>
-        <article class="skills">
-          <div class="skills-name">
+        <article className="skills">
+          <div className="skills-name">
             <h3>Back-end</h3>
           </div>
-          <div class="skills__container">
-            <div class="skill"><img src="../public/assets/img/skills-logo/java.png" alt="java" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/spring.png" alt="spring" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/node.png" alt="node" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/express.png" alt="express" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/mysql.png" alt="mysql" /></div>
+          <div className="skills__container">
+            <div className="skill"><img src="assets/img/skills-logo/java.png" alt="java" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/spring.png" alt="spring" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/node.png" alt="node" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/express.png" alt="express" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/mysql.png" alt="mysql" /></div>
           </div>
         </article>
-        <article class="skills">
-          <div class="skills-name">
+        <article className="skills">
+          <div className="skills-name">
             <h3>Deployment</h3>
           </div>
-          <div class="skills__container">
-            <div class="skill"><img src="../public/assets/img/skills-logo/docker.png" alt="docker" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/aws.png" alt="aws" /></div>
-            <div class="skill"><img src="../public/assets/img/skills-logo/vercel.png" alt="vercel" /></div>
+          <div className="skills__container">
+            <div className="skill"><img src="assets/img/skills-logo/docker.png" alt="docker" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/aws.png" alt="aws" /></div>
+            <div className="skill"><img src="assets/img/skills-logo/vercel.png" alt="vercel" /></div>
           </div>
         </article>
       </div>
@@ -229,4 +241,6 @@ function Footer(){
     </footer>
   )
 }
+
+
 export default App;
