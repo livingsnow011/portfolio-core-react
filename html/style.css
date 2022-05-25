@@ -697,9 +697,10 @@ header {
 /*==================================================================*/
 /*============================* footer *============================*/
 /*==================================================================*/
+
 footer {
-  background: var(--clr-grey-1);
-  padding: 5rem 1rem;
+  background: var(--clr-black);
+  padding: 2.5rem 1rem;
 }
 footer p {
   color: var(--clr-white);
@@ -708,7 +709,9 @@ footer p {
   letter-spacing: var(--spacing);
   margin-bottom: 0;
 }
-
+.footer-icon{
+  transform:scaleX(-1);
+}
 
 
 

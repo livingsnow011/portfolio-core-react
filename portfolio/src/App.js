@@ -1,7 +1,8 @@
 import './App.css';
 import  React,{useState,useEffect,useRef} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import emailjs from '@emailjs/browser';
 
 function App() {
@@ -309,8 +310,9 @@ function Contact(){
 
 function Footer(){
   return(
-    <footer className="footer">
+    <footer >
       <p>
+        <FontAwesomeIcon icon={faCopyright} className="footer-icon" aria-hidden="true"></FontAwesomeIcon> 2022. PARK HAN SOL. COPYLEFT ALL WRONGS RESERVED
       </p>
     </footer>
   )
