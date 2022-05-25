@@ -569,6 +569,84 @@ header {
 }
 
 /*==================================================================*/
+/*============================* projects *===========================*/
+/*==================================================================*/
+.projects__wrapper{
+  height:auto;
+}
+
+.projects__wrapper .project{
+  width: 80%;
+
+  height: 90vh;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+
+  color: var(--clr-black);
+  border-radius: var(--radius);
+  background: var(--clr-white);
+}
+
+.project__content{
+  margin: 0 auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+
+/*==================================================================*/
+/*============================* contact *============================*/
+/*==================================================================*/
+.contact__wrapper{
+  text-align: center;
+  width: 50%;
+}
+
+.contact__wrapper *{
+  margin-bottom:1rem;
+}
+
+.contact__wrapper input:nth-of-type(1){
+  width: 30%;
+  height: 50px;
+  margin-right:0.5rem;
+}
+.contact__wrapper input:nth-of-type(2){
+  width: 40%;
+  height : 50px;
+}
+.contact__wrapper input:nth-of-type(3){
+  width: 71%;
+  height: 50px;
+  border: solid 1px var(--clr-black);
+  border-radius: var(--radius);
+}
+.contact__wrapper textarea{
+  width: 71%;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px var(--clr-black);
+  border-radius: var(--radius);
+  font-size: 16px;
+  resize: both;
+}
+
+.contact__form-sendBtn{
+  width: 71%;
+  height: 50px;
+  color: var(--clr-grey-1);
+  box-shadow: var(--light-shadow);
+}
+
+@media screen and (max-width:960px) {
+  .contact__wrapper{
+    width: 95vw;
+  }
+}
+
+/*==================================================================*/
 /*============================* footer *============================*/
 /*==================================================================*/
 footer {

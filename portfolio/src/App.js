@@ -11,7 +11,8 @@ function App() {
         <About></About>
         <Archive></Archive>
         <Skills></Skills>
-      
+        <Projects></Projects>
+        <Contact></Contact>
       </main>
       <Footer></Footer>
     </div>
@@ -233,6 +234,54 @@ function Skills(){
   )
 }
 
+function Projects(){
+  return(
+    <section id="projects" className="section">
+      <div className="section-title">
+        <h2>projects</h2>
+        <p>
+          개인별, 팀별로 수행했었던 프로젝트들을 소개합니다.
+        </p>
+      </div>
+      <div className="section__wrapper projects__wrapper">
+        <article className="project">
+          <h2>Project Title</h2>
+          <h4>Project 기간</h4>
+          <div className="project__content">
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+  )
+}
+
+function Contact(){
+  return (
+    <section id="contact" className="section">
+      <div className="section-title">
+        <h2>contact</h2>
+        <p>
+          페이지 내에서 저에게 메일을 보내주실 수 있습니다. <br/>
+          채용이나 궁금한 점이 있으시면 메일을 보내주세요.
+        </p>
+      </div>
+
+      <div className="section__wrapper contact__wrapper">
+        <form id="contact-form" className="contact__form">
+          <input type="text" className="input" id="userName" placeholder=" 성함 (필수)" />             
+          <input type="text" className="input" id="phone" placeholder=" 연락처 (생략 가능)" /><br/>
+          <input type="text" className="input" id="userEmail" placeholder=" 보내주시는 분의 메일 주소를 입력해주세요 (필수)" /><br/>
+          <textarea id="message" className="input" rows="5" placeholder=" 내용을 입력해주세요 (필수)"></textarea><br/>
+          <input type="button" id="btn" className="contact__form-sendBtn" value="Send" onClick="sendEmail()"/>
+        </form>
+      </div>
+    </section>
+  )
+}
+
+
 function Footer(){
   return(
     <footer >
@@ -241,6 +290,5 @@ function Footer(){
     </footer>
   )
 }
-
 
 export default App;
