@@ -47,7 +47,11 @@ function Header(){
     } else {
         navbar.current.classList.remove("fixed-nav");
     }
+
+    //지워라
+    linksContainer.current.style.height = 0;
     })
+
   })
 
   return(
@@ -86,8 +90,6 @@ function Header(){
 }
 
 function About(){
-
-
 
   return(
     <section className="section" id="about">
