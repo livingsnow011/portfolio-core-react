@@ -548,7 +548,7 @@ header {
 }
 
 .skills .skills__container{
-  width: 600px;
+  width: 60%;
   display: flex;
   flex-flow: nowrap row;
   justify-content: flex-start;
