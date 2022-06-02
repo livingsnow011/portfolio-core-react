@@ -1,0 +1,181 @@
+@import url("../App.css");
+
+/*==================================================================*/
+/*==========================* navbar *==============================*/
+/*==================================================================*/
+nav {
+  background: transparent;
+  padding: 1rem 1.5rem;
+  z-index: 99;
+}
+
+/* fixed nav, class created by app.js in #nav */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+}
+.fixed-nav .nav__wrapper .nav__title a {
+  color: var(--clr-grey-1);
+}
+.fixed-nav .nav__wrapper .nav__title a:hover {
+  color: var(--clr-secondary);
+}
+.fixed-nav .nav__wrapper .nav__menu .links a {
+  color: var(--clr-grey-1);
+}
+.fixed-nav .nav__wrapper .nav__menu .links a:hover {
+  color: var(--clr-secondary);
+}
+
+nav .nav__wrapper {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav__wrapper .nav__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav__wrapper .nav__title a {
+  height: 50px;
+  line-height: 50px;
+  background: transparent;
+  color: var(--clr-white);
+  font-size: 1.1rem;
+  display: block;
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+  margin: 0 1rem;
+  font-weight: bold;
+  padding: 0;
+  white-space: nowrap;
+}
+
+nav .nav__wrapper .nav__title .nav-toggle {
+  visibility: hidden;
+}
+
+nav .nav__wrapper .nav__menu {
+  height: 0px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+nav .nav__wrapper .nav__menu .links a {
+  background: transparent;
+  color: var(--clr-white);
+  font-size: 1.1rem;
+  display: block;
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+  margin: 0 1rem;
+  font-weight: bold;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+/*수정 필요*/
+/*흰색 링크 호버 뭘해도 구린거 같음 */
+nav .nav__wrapper .nav__menu .links a:hover {
+  color: var(--clr-white);
+}
+
+/*축소*/
+@media screen and (max-width: 768px) {
+  nav {
+    background: var(--clr-white);
+  }
+  nav .nav__wrapper {
+    display: block;
+  }
+  nav .nav__wrapper .nav__title a {
+    color: var(--clr-grey-1);
+  }
+  nav .nav__wrapper .nav__title .nav-toggle {
+    visibility: visible;
+    font-size: 1.5rem;
+    color: var(--clr-grey-1);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  nav .nav__wrapper .nav__title .nav-toggle:hover {
+    /*햄버거 로고 호버시 색깔 동일 바꿀 거 없음 지워라 */
+    color: var(--clr-secondary);
+  }
+
+  nav .nav__wrapper .nav__menu .links a {
+    background: var(--clr-white);
+    color: var(--clr-grey-5);
+    font-size: 1.1rem;
+    letter-spacing: var(--spacing);
+    font-weight: bold;
+    padding: 0.75rem 0;
+    text-transform: capitalize;
+    display: block;
+    transition: var(--transition);
+  }
+  nav .nav__wrapper .nav__menu .links a:hover {
+    color: var(--clr-grey-1);
+  }
+}
+/*확장*/
+@media screen and (min-width: 768px) {
+  nav .nav__wrapper .nav__menu {
+    height: auto !important;
+  }
+
+  nav .nav__wrapper .nav__menu .links {
+    display: flex;
+  }
+}
+
+/*==================================================================*/
+/*==========================* figure *==============================*/
+/*==================================================================*/
+/* hero */
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../../public/assets/img/hero.png) center/cover no-repeat;
+  /*그라데이션, 했는데 더 안 예쁨 */
+  /*background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7))*/
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__wrapper h1 {
+  margin-top: 1rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*h1과 p의 간격 조절 임시, 수정 필요*/
+.hero__wrapper p:nth-child(2) {
+  margin-top: 1.5rem;
+}
+
+.hero__wrapper p {
+  color: var(--clr-white);
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
