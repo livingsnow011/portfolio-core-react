@@ -58,4 +58,9 @@
   .archive__wrapper {
     height: 800px;
   }
+
+  .archive__content {
+    width: 400px;
+    overflow: hidden;
+  }
 }

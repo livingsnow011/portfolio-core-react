@@ -5,6 +5,7 @@ function About() {
   const introductionBTN = useRef(null);
   const profileBTN = useRef(null);
   const visionsBTN = useRef(null);
+
   const introductionElement = useRef(null);
   const profileElement = useRef(null);
   const visionsElement = useRef(null);
@@ -61,13 +62,11 @@ function About() {
             >
               <h4>introduction</h4>
               <p>
-                I'm baby wolf pickled schlitz try-hard normcore marfa man bun
-                mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
-                rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard
-                tilde try-hard, woke fixie banjo man bun. Small batch tumeric
-                mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
-                direct trade hoodie ugh chambray, craft beer pork belly flannel
-                tacos single-origin coffee art party migas plaid pop-up.
+                안녕하세요 웹 개발자를 지망하는 박한솔입니다
+                <br />
+                IT 융합전공 프로그램을 통해 개발자를 목표로 삼았습니다.
+                <br />
+                졸업 후엔 SESAC MSA 과정을
               </p>
             </div>
             <div className="content" id="profile" ref={profileElement}>
