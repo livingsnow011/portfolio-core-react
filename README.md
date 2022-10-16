@@ -50,4 +50,4 @@
 
 박군은 산업디자인 학과였지만, 저보다는 미적 감각이 있는 친구라 생각보다 많은 도움이 되어줬습니다. 예를 들어 처음 사이트에 들어왔을 때 베너 디자인에 대해 생각해주었고, 섹션들의 디자인에 대해 생각해주었습니다. **신기한 것은 웹에 대한 지식이 전혀 없었음에도 반응형 페이지의 존재는 알고 있어서, 브라우저 크기에 반응하는 디자인을 추천해주었습니다.**
 
-![img](https://drive.google.com/file/d/10K5L1s7E13nd8smY0Mt2C8l5lvfj8RKB/view?usp=sharing))
+![img](https://drive.google.com/file/d/10K5L1s7E13nd8smY0Mt2C8l5lvfj8RKB/view?usp=sharing)
