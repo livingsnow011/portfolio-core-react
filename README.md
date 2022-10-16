@@ -3,8 +3,8 @@
 나의 포트폴리오 웹 페이지 프로젝트
 
 # 목차
-- [프로젝트 계획 이유](https://www.notion.so/portfolio-core-react-e9746cf37ab947db85ef2613a50ee043)
-- [프로젝트 목적](https://www.notion.so/portfolio-core-react-e9746cf37ab947db85ef2613a50ee043)
+- [프로젝트 계획 이유](#프로젝트 계획 이유)
+- [프로젝트 목적](#프로젝트 목적)
 
 ## 프로젝트 계획 이유
 ### 개발자의 명함, 포트폴리오 웹페이지
