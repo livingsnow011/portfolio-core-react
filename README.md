@@ -8,8 +8,8 @@
 - [사용 기술](#사용-기술)
 - [페이지 초안](#페이지-초안)
 - [컴포넌트](#컴포넌트)
-    - [header]
-    - [about]
+    - [header](#header)
+    - [about](#about)
     - [skills]
     - [contact]
     - [footer]
