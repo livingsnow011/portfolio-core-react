@@ -24,7 +24,7 @@
 등등이 있었습니다. 이 중에서 웹페이지 형태의 포트폴리오에 눈이 갈 수 밖에 없었습니다. 다양한 방법으로 소개 페이지를 작성했는데 개중에는 게임 방식 포트폴리오와 리눅스 터미널 방식 포트폴리오 같이 정말 신기한 페이지도 있었습니다.
 
 ![img](https://raw.githubusercontent.com/IliyanID/PortfolioWebsite/master/Resources/front-page.PNG)
-[https://github.com/IliyanID/Portfolio-Website](https://github.com/IliyanID/Portfolio-Website) 포트폴리오 페이지, 레트로 감성이라 멋있다…
+*[https://github.com/IliyanID/Portfolio-Website](https://github.com/IliyanID/Portfolio-Website) 포트폴리오 페이지, 레트로 감성이라 멋있다…*
 
 **그래서 저 또한 제가 할 수 있는 능력 선에서 자신만의 웹 페이지를 만들어보자 생각했습니다.** 교육 과정이 끝나고 이력서, 코테, CS공부를 돌리면서 실제 개발에서 멀어지는 느낌도 있었고 간단한 자기소개 페이지 작성이라면 현재 일과에서 부담이 되지 않을 것이라고 생각했기 때문입니다.
 
@@ -52,4 +52,4 @@
 
 ![img](https://lh3.googleusercontent.com/drive-viewer/AJc5JmSDeUx3_XR6FTX18EhK21-vk0V-RzGPrESf9GNmBdsMCSuphJjqCXqg_I8QJ6GNbq0ih1BC2MA=w960-h940)
 ![img](https://lh3.googleusercontent.com/drive-viewer/AJc5JmQR3fJtPyN_-hvaV9jkpbkr46lg1n6lYhYY5qBeWdtqsLG2S6AcG1Bmthsi4EaVBnDduCZQn8o=w1920-h942)
-친구가 생각한 베너 느낌과 반응형 동작 과정, 심플하지만 큰 도움이 되었다.. 
+*친구가 생각한 베너 느낌과 반응형 동작 과정, 심플하지만 큰 도움이 되었다.*
