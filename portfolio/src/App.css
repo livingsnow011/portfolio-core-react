@@ -184,6 +184,7 @@ style.css
 
 /*section의 내용물들*/
 .section__wrapper {
+  border: solid red 2px;
   min-height: 50vh;
   width: 95vw;
   max-width: 1170px;

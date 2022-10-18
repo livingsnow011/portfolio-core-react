@@ -5,7 +5,6 @@
 /*==================================================================*/
 
 .archive__wrapper {
-  border: none;
   display: flex;
   flex-flow: wrap row;
   justify-content: space-evenly;
