@@ -73,7 +73,8 @@
     - about
     - archive
     - skills
-    - project
+    - projects
+    - contact
 - footer 
 
 ### header
