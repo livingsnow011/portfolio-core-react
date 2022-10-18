@@ -81,6 +81,10 @@
   display: block;
 }
 
+.content h4 {
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 844px) {
   .about__wrapper {
     height: 800px;
