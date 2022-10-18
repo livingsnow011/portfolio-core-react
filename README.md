@@ -70,12 +70,11 @@
 리액트 라이브러리를 통해 페이지를 **컴포넌트 별로 개발할 수 있었습니다.** 정해놓은 페이지 디자인을 크게 7개의 컴포넌트로 나누고 순차적으로 개발하였습니다.
 7개의 큰 컴포넌트는 아래와 같습니다.
 - header
-main
-- about
-- archive
-- skills
-- project
-/main
+- <main>
+    - about
+    - archive
+    - skills
+    - project
 - footer 
 
 ### header
