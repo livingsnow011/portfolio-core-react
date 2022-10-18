@@ -17,7 +17,7 @@
 }
 
 .about__wrapper-img {
-  width: 300px;
+  width: 350px;
   background: url(../../public/assets/img/about/introduction.jpg) center/cover
     no-repeat;
   border-radius: var(--radius);

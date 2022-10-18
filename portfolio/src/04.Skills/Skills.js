@@ -5,7 +5,7 @@ function Skills() {
     <section id="skills" className="section">
       <div className="section-title">
         <h2>skills</h2>
-        <p>제가 학습했고, 프로젝트에서 활용한 기술 스택들을 소개합니다.</p>
+        <p>제가 경험한 기술 스택들을 소개합니다.</p>
       </div>
       <div className="section__wrapper skills__wrapper">
         <article className="skills">

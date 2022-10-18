@@ -9,8 +9,8 @@ function Projects() {
       </div>
       <div className="section__wrapper projects__wrapper">
         <article className="project">
-          <h2>Project Title</h2>
-          <h4>Project 기간</h4>
+          <h3>Ticketing Web Project</h3>
+          <h4>3人 프로젝트</h4>
           <div className="project__content"></div>
         </article>
       </div>
