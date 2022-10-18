@@ -23,6 +23,7 @@
 .project__content {
   margin: 0 auto;
   width: 90%;
+  height: 70%;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -30,7 +31,6 @@
 .project__content-img {
   width: 50%;
   overflow: hidden;
-  border: solid blue 1px;
 }
 
 .project__content-img img {
@@ -41,11 +41,21 @@
 
 .project__content-script {
   width: 50%;
-  border: solid green 1px;
+  padding: 3rem;
+  text-align: justify;
 }
 
 @media screen and (max-width: 960px) {
+  .project__content {
+    flex-direction: column;
+  }
   .projects__wrapper .project {
+    width: 100%;
+  }
+  .project__content-img {
+    width: 100%;
+  }
+  .project__content-script {
     width: 100%;
   }
 }
