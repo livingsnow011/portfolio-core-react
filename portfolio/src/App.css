@@ -191,9 +191,17 @@ style.css
 }
 
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
   .section__wrapper {
     width: 90vw;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .section-title {
+    margin-bottom: 1rem;
   }
 }

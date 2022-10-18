@@ -64,11 +64,9 @@ function About() {
               <p>
                 안녕하세요 웹 개발자를 지망하는 박한솔입니다. 대학교에서 타전공
                 경험을 위해 들은 IT 융합전공 프로그램에서 개발 분야에 매력을
-                느끼게 되어 개발자를 목표로 삼았습니다. 끊임없는 자기계발과
-                노력에 따라 본인의 가치를 상승시킬 수 있는 개발 직군이
-                매력적으로 다가왔습니다. 효율적인 로직을 구축할 수 있는 백엔드
-                개발자가 되기 위해 노력하고 있습니다. 원할한 팀플레이를 위해
-                사람들과 편안한 관계를 구축하는 것을 목표로 합니다.
+                느끼게 되어 개발자를 목표로 삼았습니다. 개발자가 되기 위해 졸업
+                후 SESAC MSA 교육과정에서 웹에 대한 공부를 하였고, 관련
+                자격증들을 취득했습니다.
               </p>
             </div>
             <div className="content" id="profile" ref={profileElement}>
@@ -93,17 +91,11 @@ function About() {
             </div>
             <div className="content" id="visions" ref={visionsElement}>
               <h4>visions</h4>
-              <p>
-                Chambray authentic truffaut, kickstarter brunch taxidermy vape
-                heirloom four dollar toast raclette shoreditch church-key.
-                Poutine etsy tote bag, cred fingerstache leggings cornhole
-                everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk
-                swag, mixtape hashtag marfa readymade direct trade man braid
-                cold-pressed roof party. Small batch adaptogen coloring book
-                heirloom. Letterpress food truck hammock literally hell of wolf
-                beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
-                banh mi salvia venmo photo booth quinoa chicharrones.
-              </p>
+              <p>1. 커리어를 시작하여 저만의 전문분야를 갖고 싶습니다.</p>
+              <p>2. 클라우드 및 MSA 환경에서 개발을 숙달하고 싶습니다.</p>
+              <p>3. 클라우드,쿠버네티스 자격증을 취득하고 싶습니다.</p>
+              <p>4. 대규모 사용자 대상 서비스를 경험하고 싶습니다.</p>
+              <p>5. 회사 근처에서 자취하고 싶습니다.</p>
             </div>
           </div>
         </article>

@@ -49,49 +49,51 @@ function Contact() {
       </div>
 
       <div className="section__wrapper contact__wrapper">
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          id="contact-form"
-          className="contact__form"
-        >
-          <input
-            type="text"
-            className="input"
-            name="user_name"
-            id="userName"
-            placeholder=" 성함 (필수)"
-          />
-          <input
-            type="text"
-            className="input"
-            id="phone"
-            placeholder=" 연락처 (생략 가능)"
-          />
-          <br />
-          <input
-            type="text"
-            className="input"
-            name="user_email"
-            id="userEmail"
-            placeholder=" 보내주시는 분의 메일 주소를 입력해주세요 (필수)"
-          />
-          <br />
-          <textarea
-            id="message"
-            name="message"
-            className="input"
-            rows="5"
-            placeholder=" 내용을 입력해주세요 (필수)"
-          ></textarea>
-          <br />
-          <input
-            type="submit"
-            id="btn"
-            className="contact__form-sendBtn"
-            value="Send"
-          />
-        </form>
+        <div className="contact__form">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            id="contact-form"
+            className="contact__form"
+          >
+            <input
+              type="text"
+              className="input"
+              name="user_name"
+              id="userName"
+              placeholder=" 성함 (필수)"
+            />
+            <input
+              type="text"
+              className="input"
+              id="phone"
+              placeholder=" 연락처 (생략 가능)"
+            />
+            <br />
+            <input
+              type="text"
+              className="input"
+              name="user_email"
+              id="userEmail"
+              placeholder="  메일 주소를 입력해주세요 (필수)"
+            />
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              className="input"
+              rows="5"
+              placeholder=" 내용을 입력해주세요 (필수)"
+            ></textarea>
+            <br />
+            <input
+              type="submit"
+              id="btn"
+              className="contact__form-sendBtn"
+              value="Send"
+            />
+          </form>
+        </div>
       </div>
     </section>
   );
