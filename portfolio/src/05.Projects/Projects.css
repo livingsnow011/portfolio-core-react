@@ -9,8 +9,8 @@
 
 .projects__wrapper .project {
   width: 80%;
-
-  height: 70vh;
+  height: auto;
+  min-height: 70vh;
   margin: 2rem auto;
   padding: 2rem 1.5rem;
   text-align: center;
@@ -28,20 +28,28 @@
   flex-flow: row nowrap;
 }
 
+.project h3,
+.project h4 {
+  color: #9cc7e7;
+}
+
 .project__content-img {
   width: 50%;
   overflow: hidden;
 }
 
 .project__content-img img {
+  border: solid 1px #9cc7e7;
+  border-radius: var(--radius);
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .project__content-script {
   width: 50%;
-  padding: 3rem;
+  line-height: 150%;
+  padding: 1rem;
   text-align: justify;
 }
 
