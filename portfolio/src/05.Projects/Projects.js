@@ -21,6 +21,14 @@ function Projects() {
               />
             </div>
             <div className="project__content-script">
+              <div className="readme">
+                <h4>Readme.md</h4>
+                <p style={{ color: "black", textDecorationLine: "underline" }}>
+                  <a href="https://github.com/livingsnow011/TicketingWeb-app-spring/blob/main/README.md">
+                    https://github.com/livingsnow011/TicketingWeb-app-spring/blob/main/README.md
+                  </a>
+                </p>
+              </div>
               <div className="overview">
                 <h4>OverView</h4>
                 <p style={{ color: "black" }}>
@@ -59,6 +67,14 @@ function Projects() {
               <img src="assets/img/portfolio/portfolio.jpg" alt="portfolio" />
             </div>
             <div className="project__content-script">
+              <div className="readme">
+                <h4>ReadMe</h4>
+                <p style={{ color: "black", textDecorationLine: "underline" }}>
+                  <a href="https://github.com/livingsnow011/portfolio-core-react/blob/main/README.md">
+                    https://github.com/livingsnow011/portfolio-core-react/blob/main/README.md
+                  </a>
+                </p>
+              </div>
               <div className="overview">
                 <h4>OverView</h4>
                 <p style={{ color: "black" }}>
