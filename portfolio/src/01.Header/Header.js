@@ -80,7 +80,7 @@ function Header() {
 
       <figure className="hero">
         <div className="hero__wrapper">
-          <h1>Devleoper</h1>
+          <h1>Develeoper</h1>
           <p>안녕하세요.</p>
           <p>웹 개발자 박한솔의 포트폴리오 페이지입니다.</p>
           <p>끊임없이 도전하는 개발자입니다.</p>
