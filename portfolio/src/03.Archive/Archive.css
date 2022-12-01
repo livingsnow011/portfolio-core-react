@@ -21,7 +21,8 @@
 }
 
 .archive__content:hover {
-  background-color: var(--clr-grey-10);
+  background: var(--clr-primary-10);
+  color: var(--clr-primary-5);
 }
 
 .archive__content * {

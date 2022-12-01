@@ -23,10 +23,10 @@ function Skills() {
               <img src="assets/img/skills-logo/js.png" alt="js" />
             </div>
             <div className="skill">
-              <img src="assets/img/skills-logo/ts.png" alt="ts" />
+              <img src="assets/img/skills-logo/react.png" alt="react" />
             </div>
             <div className="skill">
-              <img src="assets/img/skills-logo/react.png" alt="react" />
+              <img src="assets/img/skills-logo/thymeleaf.png" alt="thymeleaf" />
             </div>
           </div>
         </article>
@@ -42,13 +42,13 @@ function Skills() {
               <img src="assets/img/skills-logo/spring.png" alt="spring" />
             </div>
             <div className="skill">
-              <img src="assets/img/skills-logo/node.png" alt="node" />
-            </div>
-            <div className="skill">
-              <img src="assets/img/skills-logo/express.png" alt="express" />
-            </div>
-            <div className="skill">
               <img src="assets/img/skills-logo/mysql.png" alt="mysql" />
+            </div>
+            <div className="skill">
+              <img src="assets/img/skills-logo/jsp.png" alt="jsp" />
+            </div>
+            <div className="skill">
+              <img src="assets/img/skills-logo/jpa.png" alt="jpa" />
             </div>
           </div>
         </article>
@@ -58,10 +58,16 @@ function Skills() {
           </div>
           <div className="skills__container">
             <div className="skill">
-              <img src="assets/img/skills-logo/docker.png" alt="docker" />
+              <img src="assets/img/skills-logo/aws.png" alt="aws" />
             </div>
             <div className="skill">
-              <img src="assets/img/skills-logo/aws.png" alt="aws" />
+              <img src="assets/img/skills-logo/centos.png" alt="centos" />
+            </div>
+            <div className="skill">
+              <img src="assets/img/skills-logo/ubuntu.png" alt="ubuntu" />
+            </div>
+            <div className="skill">
+              <img src="assets/img/skills-logo/action.png" alt="action" />
             </div>
             <div className="skill">
               <img src="assets/img/skills-logo/vercel.png" alt="vercel" />

@@ -38,7 +38,10 @@ function Projects() {
                   <br />
                   <b>Spring boot 환경</b>에서 다른 개발자 수강생들과 협업하여
                   만들었으며, 그 과정에서 많은 것을 배울 수 있었습니다. 개발에
-                  들어가기 전에 trello와 DB설계를 위한 회의를 자주 했습니다.
+                  들어가기 전에 trello와 DB설계를 위한 회의를 통해 공통 부분
+                  기획설계를 경험할 수 있었으며, 프로젝트 기능 구현이 끝난 후{" "}
+                  <b>AWS 서비스를 통해 클라우드 환경에 배포</b>
+                  해보았습니다.
                 </p>
               </div>
               <div className="technology">
@@ -49,8 +52,9 @@ function Projects() {
                     <br />
                     ● Backend : Springboot, JPA
                     <br />
-                    ● Database : MySQL5
-                    <br />● deploy : AWS (EC2,RDS)
+                    ● Database : MySQL
+                    <br />● deploy : AWS (EC2,RDS) + Nginx
+                    <br />● OS : Amazone Linux 2
                   </b>
                 </p>
               </div>
